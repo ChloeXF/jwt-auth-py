@@ -13,3 +13,7 @@ jwt-auth-py
 ----------
 
 python:3.8.9
+Django>=2.0.5
+djangorestframework>=3.8.2
+PyJWT>=1.6.4
+      
