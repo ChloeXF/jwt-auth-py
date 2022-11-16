@@ -3,7 +3,7 @@ from setuptools import setup
 # Metadata goes in setup.cfg. These are here for GitHub's dependency graph.
 setup(
     name="jwt_auths",
-    version='0.0.3',
+    version='0.0.5',
     url='https://github.com/ChloeXF/jwt-auth-py',
     packages=['jwt_auth'],
     install_requires=[

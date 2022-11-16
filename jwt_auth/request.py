@@ -8,6 +8,7 @@ The wrapped request then offers a richer API, in particular :
     - full support of PUT method, including support for file uploads
     - form overloading of HTTP method, content type and content
 """
+import time
 
 import jwt
 
@@ -24,7 +25,7 @@ def set_jwt_for_data(username, key, data, exp=60):
     """
     if 'exp' in data:
         raise AssertionError('You can not set exp in data')
-    data['exp'] = exp
+    data['exp'] = time.time() + exp
     payload = jwt.encode(
         data,
         key,
