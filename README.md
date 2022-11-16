@@ -62,7 +62,7 @@ Install and update using `pip`_:
     
     @action(methods=['post'], detail=False, authentication_classes=(JWTTokenAuthentication,))
     def test(self, request, *args, **kwargs):  # noqa
-        return JwtResponse({'t': 1})
+        return JwtResponse(request, {'t': 1})
 
     # 发送请求：
     import requests
@@ -70,4 +70,4 @@ Install and update using `pip`_:
     data = {'t': 1}
     # username 值为 USER_MODE 中的 username; key 值为 Token 中的 key
     set_jwt_for_data(username='TEST-JWT-AUTH-PY', key='{key}', data)
-    requests.post('/test', data)
+    requests.post('/test', json=data)
