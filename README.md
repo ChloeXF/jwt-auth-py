@@ -13,7 +13,23 @@ jwt-auth-py
 ----------
 
 python:3.8.9
+
 Django>=2.0.5
+
 djangorestframework>=3.8.2
+
 PyJWT>=1.6.4
-      
+
+安装
+----------
+
+pip install -U jwt_auths
+
+Install and update using `pip`_:
+
+.. code-block:: text
+
+    $ pip install -U jwt_auths
+
+.. _pip: https://pip.pypa.io/en/stable/getting-started/
+
