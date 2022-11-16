@@ -64,7 +64,7 @@ Install and update using `pip`_:
     def test(self, request, *args, **kwargs):  # noqa
         return JwtResponse(request, {'t': 1})
 
-    # 发送请求：
+    # 发送测试请求：
     import requests
     from jwt_auth.request import set_jwt_for_data
     data = {'t': 1}
